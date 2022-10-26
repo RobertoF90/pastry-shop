@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora' sans-serif;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  margin: 0;
+  color: #db120e;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  color: #fff;
+  border: none;
+  height: 40px;
+
+  background: #fd8419;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.sezione {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.fa-primary-color {
+  color: #db120e;
+}
+
+/******************************************
+    /* LAYOUT
+/*******************************************/
+header {
+  height: 700px;
+  background: #e5b390;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+  padding: 0rem 120px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav__links {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__links .nav__links--link {
+  transition: all 0.1s;
+  opacity: 0;
+}
+
+.nav__links:hover {
+  cursor: pointer;
+  color: #e02a27;
+}
+
+.nav__links:hover .nav__links--link {
+  display: inherit;
+  background-color: #f0d9c8b0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+
+  opacity: 1;
+}
+
+.nav__links--link a {
+  text-decoration: none;
+  color: #fff;
+
+  transition: all 0.2s;
+}
+
+.nav__links--link a:hover {
+  color: #333;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  height: 80%;
+}
+
+.header__main--text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__main--heading {
+  font-size: 60px;
+  width: 50%;
+}
+
+.header__main--sub-heading {
+  font-size: 48px;
+}
+
+.header__main--icons {
+  font-size: 24px;
+  font-weight: 700;
+
+  gap: 40px;
+}
+
+.header__main--icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__main--icon:hover {
+  cursor: pointer;
+}
+
+.header__main--img {
+  height: 100%;
+}
+
+/* CHI SIAMO */
+
+.sezione__chi-siamo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chi-siamo {
+  height: 100%;
+  width: 35%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  padding-left: 5%;
+}
+
+.chi-siamo--img {
+  width: 50%;
+
+  margin-bottom: -4px;
+}
+
+.chi-siamo--img img {
+  width: 100%;
+}
+
+/* SPECIALITY */
+
+.sezione__specialità {
+  background: #e5b390;
+}
+
+.sezione__specialità h2 {
+  margin: 20px 0;
+}
+
+.galleria {
+  padding-top: 20px;
+  margin: 0 120px;
+  height: 100%;
+  display: flex;
+  column-gap: 30px;
+}
+
+.galleria-img {
+  height: 300px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* TESTIMONIALS */
+
+.sezione__testimonial {
+  gap: 10px;
+}
+
+.sezione__testimonial p {
+  width: 50%;
+  text-align: center;
+}
+
+.testimonial-foto {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.testimonial-titolo {
+  font-size: 14px;
+  color: #888;
+}
+
+.sezione__testimonial h4 {
+  font-size: 28px;
+}
+
+.sezione__testimonial i {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 40px 20px;
+}
+
+.footer a {
+  color: #db120e;
+  text-decoration: none;
+}
+
+.footer input {
+  border: 1px solid #aaa;
+  border-radius: 7px;
+  color: #000;
+  padding: 15px;
+}
+
+.footer__elements {
+  padding: 40px 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.footer__elements--element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  gap: 20px;
+}
+
+.footer__elements--element h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.footer > ul > li div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 75px;
+}
+
+.copyright {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.footer--icons {
+  display: flex;
+  gap: 30px;
+  font-size: 28px;
+}
+
+.footer--icons:hover {
+  cursor: pointer;
+}
